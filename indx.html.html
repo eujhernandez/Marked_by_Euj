@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Marked by Euj — custom lettering, script, and minimalist tattoo inquiries.">
+  <title>Marked by Euj — Custom Tattoos</title>
+  <style>
+    :root{--ink:#111;--paper:#fff;--soft:#f5f5f3;--muted:#686868;--line:#dededb;--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}
+    a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    .nav{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font:24px var(--serif);letter-spacing:-.04em}.brand small{display:block;font:9px var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-top:5px;color:var(--muted)}
+    .links{display:flex;align-items:center;gap:26px;font-size:10px;text-transform:uppercase;letter-spacing:.14em}.links a:hover{opacity:.55}
+    .button{display:inline-flex;justify-content:center;align-items:center;border:1px solid var(--ink);padding:14px 19px;background:var(--ink);color:white;font-size:10px;text-transform:uppercase;letter-spacing:.13em;cursor:pointer;transition:.2s}
+    .button:hover{background:white;color:var(--ink)}.button.outline{background:transparent;color:var(--ink)}.button.outline:hover{background:var(--ink);color:white}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center;padding:82px 0 90px}
+    .eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.24em;color:#555}
+    h1{font:clamp(54px,7.8vw,100px)/.94 var(--serif);letter-spacing:-.065em;font-weight:400;margin:24px 0}
+    h1 em{font-weight:400;font-style:italic}
+    .intro{max-width:430px;color:var(--muted);font-size:14px;line-height:1.9}
+    .actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-visual{min-height:480px;background:var(--soft);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .hero-visual:before,.hero-visual:after{content:"";position:absolute;border:1px solid #d0d0cc;border-radius:50%;width:68%;aspect-ratio:1}
+    .hero-visual:after{width:48%}.monogram{z-index:1;font:italic clamp(95px,14vw,170px)/1 var(--serif);letter-spacing:-.12em}
+    .visual-note{position:absolute;bottom:22px;left:22px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+    section{padding:82px 0;border-top:1px solid var(--line)}.heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}
+    h2{font:clamp(38px,5vw,62px)/1.02 var(--serif);font-weight:400;letter-spacing:-.05em;margin:12px 0 0}
+    .heading p{max-width:370px;color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .service{padding:26px;border:1px solid var(--line);min-height:205px}.number{font:italic 18px var(--serif);color:#777}
+    h3{font:27px var(--serif);font-weight:400;margin:35px 0 10px}.service p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .photo{aspect-ratio:4/5;background:var(--soft);display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;position:relative;overflow:hidden;border:1px solid var(--line)}
+    .photo:before{content:"";width:56%;height:62%;border:1px solid #c8c8c3;border-radius:48% 48% 42% 42%;position:absolute;transform:rotate(13deg)}
+    .photo span{position:relative;z-index:1;font:italic 23px var(--serif)}.photo small{display:block;font:9px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+    .note{font-size:11px;line-height:1.7;color:var(--muted);margin-top:15px}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:center}
+    .about-art{min-height:330px;background:var(--soft);display:flex;align-items:center;justify-content:center;font:italic 54px var(--serif);text-align:center}
+    .about-copy p{color:var(--muted);font-size:13px;line-height:2}.signature{font:italic 24px var(--serif);margin-top:20px}
+    .book{background:var(--ink);color:white}.book .eyebrow{color:#c7c7c7}.book .heading p,.book .sub{color:#bcbcbc}
+    .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:start}.book h2{max-width:500px}
+    .book .button{background:white;color:#111;border-color:white}.book .button:hover{background:transparent;color:white}
+    .steps{padding:0;margin:26px 0 0;list-style:none}.steps li{padding:14px 0;border-top:1px solid #3c3c3c;font-size:12px;color:#d0d0d0;line-height:1.7}
+    .steps b{color:white;font-weight:500}
+    .care{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.care article{border-top:1px solid #111;padding-top:17px}.care b{font:22px var(--serif);font-weight:400}.care p{font-size:12px;line-height:1.8;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:28px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}footer p{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+    @media(max-width:760px){.links a:not(.nav-book){display:none}.hero{grid-template-columns:1fr;padding:55px 0 60px;gap:35px}.hero-visual{min-height:340px}.heading,.about,.book-grid{display:grid;grid-template-columns:1fr;gap:20px}section{padding:62px 0}.services,.gallery{grid-template-columns:1fr}.service{min-height:170px}.photo{aspect-ratio:5/4}.care{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home">Marked by Euj<small>Custom tattoo inquiries</small></a>
+  <nav class="links" aria-label="Main navigation">
+    <a href="#services">Services</a><a href="#work">Portfolio</a><a href="#about">The artist</a>
+    <a class="button nav-book" href="#booking">Inquire to book</a>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Personal ink. Lasting meaning.</div>
+      <h1>Make it<br><em>mean</em> something.</h1>
+      <p class="intro">Thoughtful tattoos, made one line at a time. From meaningful lettering to minimalist pieces, let’s turn your idea into something personal.</p>
+      <div class="actions"><a class="button" href="#booking">Inquire to book ↗</a><a class="button outline" href="#work">View portfolio</a></div>
+    </div>
+    <div class="hero-visual" aria-label="Marked by Euj monogram artwork"><div class="monogram">MbE</div><div class="visual-note">A mark that means something · Est. 2026</div></div>
+  </div>
+
+  <section id="services"><div class="wrap">
+    <div class="heading"><div><div class="eyebrow">What I do</div><h2>Made for your story.</h2></div><p>Every tattoo starts with an idea. We can discuss your concept, size, and placement before confirming a session.</p></div>
+    <div class="services">
+      <article class="service"><div class="number">01 /</div><h3>Lettering & Script</h3><p>Names, dates, quotes, and words worth keeping, designed with care for flow and placement.</p></article>
+      <article class="service"><div class="number">02 /</div><h3>Minimalist</h3><p>Simple, considered designs where placement and clear details matter.</p></article>
+      <article class="service"><div class="number">03 /</div><h3>Custom Concepts</h3><p>Share your idea and references to start a conversation about a personal design.</p></article>
+    </div>
+  </div></section>
+
+  <section id="work"><div class="wrap">
+    <div class="heading"><div><div class="eyebrow">The portfolio</div><h2>Selected work.</h2></div><p>A place for the pieces you’re proud of. These placeholders will be replaced with your own tattoo photographs.</p></div>
+    <div class="gallery">
+      <div class="photo"><span>Lettering<small>Replace with your photo</small></span></div>
+      <div class="photo"><span>Minimalist<small>Replace with your photo</small></span></div>
+      <div class="photo"><span>Custom piece<small>Replace with your photo</small></span></div>
+    </div>
+    <p class="note">Portfolio note: add your own clear photos and get each client’s permission before publishing images of their tattoos.</p>
+  </div></section>
+
+  <section id="about"><div class="wrap about">
+    <div class="about-art">Marked<br>by Euj.</div>
+    <div class="about-copy"><div class="eyebrow">Meet the artist</div><h2>Every piece<br>has a story.</h2>
+      <p>Hi, I’m Euj — the artist behind Marked by Euj. I’m growing my craft through patience, practice, and a love for meaningful designs. My focus is lettering, script, and minimalist tattoos.</p>
+      <p>Bring your idea, reference, or the meaning you want to keep. We’ll discuss the design, placement, and details before confirming your appointment.</p><div class="signature">— Euj</div>
+    </div>
+  </div></section>
+
+  <section class="book" id="booking"><div class="wrap book-grid">
+    <div><div class="eyebrow">Start your inquiry</div><h2>Ready to make your mark?</h2><p class="sub" style="font-size:13px;line-height:1.9;max-width:410px">Message Marked by Euj on Facebook to discuss your tattoo idea, preferred placement, approximate size, and schedule.</p>
+      <!-- Replace the placeholder below with your real Facebook Page username or Messenger link before publishing. -->
+      <a class="button" href="YOUR_MESSENGER_LINK_HERE" id="messengerLink" target="_blank" rel="noopener">Message on Facebook ↗</a>
+      <p class="sub" style="font-size:11px;line-height:1.8;margin-top:16px">The button needs your real Facebook Page/Messenger link before it will work. No contact details have been guessed or added.</p>
+    </div>
+    <div><div class="eyebrow">To help plan your session</div><ul class="steps">
+      <li><b>01 — Your design</b><br>Send the wording, concept, or reference image.</li>
+      <li><b>02 — Placement & size</b><br>Tell me where you want it and your approximate size.</li>
+      <li><b>03 — Schedule & quote</b><br>Discuss availability and pricing directly before confirming.</li>
+    </ul></div>
+  </div></section>
+
+  <section id="aftercare"><div class="wrap">
+    <div class="heading"><div><div class="eyebrow">Care after your session</div><h2>Aftercare matters.</h2></div><p>Follow the specific instructions provided by your tattoo artist. Contact a qualified healthcare professional if you have concerns about healing.</p></div>
+    <div class="care">
+      <article><b>Keep it clean</b><p>Wash your hands before touching the tattoo and follow your artist’s cleaning instructions.</p></article>
+      <article><b>Don’t pick</b><p>Allow healing skin to shed naturally; avoid scratching or picking.</p></article>
+      <article><b>Avoid soaking</b><p>Avoid swimming and long soaks while the tattoo is healing.</p></article>
+      <article><b>Protect it</b><p>Follow your artist’s advice on sun exposure, clothing, and aftercare products.</p></article>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home">Marked by Euj<small>Made with intention.</small></a><p>© <span id="year"></span> Marked by Euj</p><a href="#booking" style="font-size:10px;text-transform:uppercase;letter-spacing:.12em">Facebook booking inquiry ↗</a></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
